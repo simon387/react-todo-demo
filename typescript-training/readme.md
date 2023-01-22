@@ -1,3 +1,3 @@
 on win use
 
-```npx tsc <filename.ts>```
+```npx tsc --target ES5 <filename.ts>```
