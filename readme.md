@@ -6,3 +6,7 @@ and
 
 ```npx tsc --init```
 
+or 
+
+```npx create-react-app library-app --template typescript```
+
