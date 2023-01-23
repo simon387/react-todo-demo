@@ -11,7 +11,7 @@ function App() {
 		{rowNumber: 3, rowDescription: 'Make dinner', rowAssigned: 'User One'},
 		{rowNumber: 4, rowDescription: 'Charge phone battery', rowAssigned: 'User One'},
 	]);
-	const addTodo = (description, assigned) => {
+	const addTodo = (description: string, assigned: string) => {
 		let rowNumber = 1;
 		if (todos.length > 0) {
 			rowNumber = todos[todos.length - 1].rowNumber + 1;
@@ -19,7 +19,7 @@ function App() {
 		const newTodo = {rowNumber: rowNumber, rowDescription: description, rowAssigned: assigned}
 		setTodos(todos => [...todos, newTodo]);
 	}
-	const deleteTodo = (deleteTodoRowNumber) => {
+	const deleteTodo = (deleteTodoRowNumber: number) => {
 		let filtered = todos.filter(function (value) {
 			return value.rowNumber !== deleteTodoRowNumber;
 		});
